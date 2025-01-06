@@ -11,7 +11,7 @@ class Bot:
 
     def Start(self):
         selenium_option = webdriver.ChromeOptions()
-        selenium_option.add_argument('--log-level=0') #ลดระดับการแสดงผลLogเหลือError
+        selenium_option.add_argument('--log-level=3') #ลดระดับการแสดงผลLogเหลือError
         selenium_option.add_argument('--headless') #ใช้งานโหมดheadless
         selenium_ = webdriver.Chrome(options=selenium_option)
         selenium_.get(self.url)
